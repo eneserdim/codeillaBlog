@@ -1,0 +1,255 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F092CA0E-FEE3-49E8-9E5E-1D5489D528C2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>codeillaBlog</RootNamespace>
+    <AssemblyName>codeillaBlog</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="devfolio-master\blog-single.html" />
+    <Content Include="devfolio-master\contactform\contactform.js" />
+    <Content Include="devfolio-master\contactform\Readme.txt" />
+    <Content Include="devfolio-master\css\button.css" />
+    <Content Include="devfolio-master\css\scss-files.txt" />
+    <Content Include="devfolio-master\css\style-green.css" />
+    <Content Include="devfolio-master\css\style-orange.css" />
+    <Content Include="devfolio-master\css\style-purple.css" />
+    <Content Include="devfolio-master\css\style-red.css" />
+    <Content Include="devfolio-master\css\style-sky-blue.css" />
+    <Content Include="devfolio-master\css\style.css" />
+    <Content Include="devfolio-master\img\apple-touch-icon.png" />
+    <Content Include="devfolio-master\img\BABYSOFT PROJ.png" />
+    <Content Include="devfolio-master\img\counters-bg.jpg" />
+    <Content Include="devfolio-master\img\ESRA GÜLDEMİR PROJ.png" />
+    <Content Include="devfolio-master\img\EVSEVEN PROJ.png" />
+    <Content Include="devfolio-master\img\favicon.png" />
+    <Content Include="devfolio-master\img\FİTOLOJİ PROJ%29.png" />
+    <Content Include="devfolio-master\img\HAPPYHOME PROJ.png" />
+    <Content Include="devfolio-master\img\intro-bg - Copy.jpg" />
+    <Content Include="devfolio-master\img\intro-bg.jpg" />
+    <Content Include="devfolio-master\img\overlay-bg.jpg" />
+    <Content Include="devfolio-master\img\PathForward-scaled.jpg" />
+    <Content Include="devfolio-master\img\post-1.jpg" />
+    <Content Include="devfolio-master\img\post-2.jpg" />
+    <Content Include="devfolio-master\img\post-3.jpg" />
+    <Content Include="devfolio-master\img\SOFTBOWL PROJ%29.png" />
+    <Content Include="devfolio-master\img\TEKSADERİ PROJ%29.png" />
+    <Content Include="devfolio-master\img\testimonial-2.jpg" />
+    <Content Include="devfolio-master\img\testimonial-4.jpg" />
+    <Content Include="devfolio-master\img\work-1.jpg" />
+    <Content Include="devfolio-master\img\work-2.jpg" />
+    <Content Include="devfolio-master\img\work-3.jpg" />
+    <Content Include="devfolio-master\img\work-4.jpg" />
+    <Content Include="devfolio-master\img\work-5.jpg" />
+    <Content Include="devfolio-master\img\work-6.jpg" />
+    <Content Include="devfolio-master\img\workspace-of-web-developer-with-text-code-on-abstract-blue-background-isometric-design-for-software-development-400-168666286.jpg" />
+    <Content Include="devfolio-master\index.html" />
+    <Content Include="devfolio-master\js\main.js" />
+    <Content Include="devfolio-master\lib\animate\animate.css" />
+    <Content Include="devfolio-master\lib\animate\animate.min.css" />
+    <Content Include="devfolio-master\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="devfolio-master\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="devfolio-master\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="devfolio-master\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="devfolio-master\lib\counterup\jquery.counterup.js" />
+    <Content Include="devfolio-master\lib\counterup\jquery.counterup.min.js" />
+    <Content Include="devfolio-master\lib\counterup\jquery.waypoints.min.js" />
+    <Content Include="devfolio-master\lib\easing\easing.js" />
+    <Content Include="devfolio-master\lib\easing\easing.min.js" />
+    <Content Include="devfolio-master\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="devfolio-master\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="devfolio-master\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="devfolio-master\lib\ionicons\css\ionicons.css" />
+    <Content Include="devfolio-master\lib\ionicons\css\ionicons.min.css" />
+    <Content Include="devfolio-master\lib\ionicons\fonts\ionicons.svg" />
+    <Content Include="devfolio-master\lib\jquery\jquery-migrate.min.js" />
+    <Content Include="devfolio-master\lib\jquery\jquery.min.js" />
+    <Content Include="devfolio-master\lib\lightbox\css\lightbox.css" />
+    <Content Include="devfolio-master\lib\lightbox\css\lightbox.min.css" />
+    <Content Include="devfolio-master\lib\lightbox\images\close.png" />
+    <Content Include="devfolio-master\lib\lightbox\images\loading.gif" />
+    <Content Include="devfolio-master\lib\lightbox\images\next.png" />
+    <Content Include="devfolio-master\lib\lightbox\images\prev.png" />
+    <Content Include="devfolio-master\lib\lightbox\js\lightbox.js" />
+    <Content Include="devfolio-master\lib\lightbox\js\lightbox.min.js" />
+    <Content Include="devfolio-master\lib\lightbox\links.php" />
+    <Content Include="devfolio-master\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="devfolio-master\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="devfolio-master\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="devfolio-master\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="devfolio-master\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="devfolio-master\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="devfolio-master\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="devfolio-master\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="devfolio-master\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="devfolio-master\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="devfolio-master\lib\popper\popper.min.js" />
+    <Content Include="devfolio-master\lib\typed\typed.js" />
+    <Content Include="devfolio-master\lib\typed\typed.min.js" />
+    <Content Include="devfolio-master\Readme.txt" />
+    <Content Include="devfolio-master\img\enes.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AnasayfaController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="devfolio-master\lib\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="devfolio-master\lib\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="devfolio-master\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="devfolio-master\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="devfolio-master\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="devfolio-master\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="devfolio-master\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="devfolio-master\lib\ionicons\fonts\ionicons.eot" />
+    <Content Include="devfolio-master\lib\ionicons\fonts\ionicons.ttf" />
+    <Content Include="devfolio-master\lib\ionicons\fonts\ionicons.woff" />
+    <Content Include="devfolio-master\lib\owlcarousel\LICENSE" />
+    <Content Include="devfolio-master\lib\popper\popper.min.js.map.json" />
+    <Content Include="devfolio-master\lib\typed\typed.min.js.map" />
+    <None Include="packages.config" />
+    <Content Include="Views\Anasayfa\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\Kategori.cshtml" />
+    <Content Include="Views\Blog\Populer.cshtml" />
+    <Content Include="Views\Blog\Etiket.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52922</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52922/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
